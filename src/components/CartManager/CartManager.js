@@ -1,7 +1,8 @@
-const fs = require("fs");
-const ProductManager = require("../ProductManager/ProductManager");
+import fs from "fs";
+import __dirname from "../../utils.js";
+import ProductManager from "../ProductManager/ProductManager.js";
 
-const PM = new ProductManager(`${__dirname}/../../Productos.json`);
+const PM = new ProductManager(`${__dirname}/../Productos.json`);
 
 class CartManager {
 
@@ -117,4 +118,4 @@ class CartManager {
 
 }
 
-module.exports = CartManager;
+export default CartManager;
