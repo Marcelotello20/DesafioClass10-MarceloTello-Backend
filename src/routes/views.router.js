@@ -35,6 +35,14 @@ router.get('/realtimeproducts', async (req,res) => {
     }
 })
 
+router.get('/addproduct', (req, res) => {
+    res.render('addproduct', {
+        style: 'index.css'
+        });
+});
+
+
+
 
 
 export default router;
