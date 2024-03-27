@@ -98,16 +98,5 @@
 		"thumbnail": "Sin imagen",
 		"stock": 5,
 		"id": 10
-	},
-	{
-		"code": "beeo1",
-		"title": "Beat en Oferta",
-		"description": "Beats en oferta para tu bolsillo",
-		"category": "Beats",
-		"price": 35000,
-		"thumbnail": "Sin Imagen",
-		"stock": 4,
-		"id": 11,
-		"status": true
 	}
 ]

@@ -81,5 +81,18 @@ router.delete('/:id', async (req, res) => {
     }
 });
 
+// Endpoint para eliminar un producto por su id combinandolo con un form en HTML y en views.router( DELETE NO EXISTE EN HTML )
+router.post('/deleteproduct', async (req, res) => {
+    const productId = +req.body.productId;
+
+    try {
+        await PM.deleteProduct(productId);
+        res.send('Producto eliminado correctamente');
+    } catch (error) {
+        console.error("Error al eliminar el producto:", error);
+        res.status(500).send('Error al eliminar el producto');
+    }
+});
+
 export default productsRouter;
 

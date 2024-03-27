@@ -41,8 +41,11 @@ router.get('/addproduct', (req, res) => {
         });
 });
 
-
-
+router.get('/deleteproduct', async (req, res) => {
+    res.render('deleteproduct', {
+        style: 'index.css'
+    });
+});
 
 
 export default router;

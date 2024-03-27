@@ -6,7 +6,8 @@ body {
 }
 
 .container {
-    width: 100%;
+    min-width: 320px;
+    max-width: 100%;
     display: grid;
     justify-content: center;
     align-items: center;
